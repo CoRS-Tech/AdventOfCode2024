@@ -20,11 +20,11 @@ int Day1::part_1() {
     int totalDistance = 0;
 
     for (int i = 0; i < keys.size(); i++) {
-        int nxtSmallK = keys[i];
-        int nxtSmallV = values[i];
-        int distance = std::abs(nxtSmallK - nxtSmallV);
+        int nxtK = keys[i];
+        int nxtV = values[i];
+        int distance = std::abs(nxtK - nxtV);
 
-        std::cout << std::format("Pair: ({}, {}), distance: {}\n", nxtSmallK, nxtSmallV, distance);
+        std::cout << std::format("Pair: ({}, {}), distance: {}\n", nxtK, nxtV, distance);
 
         totalDistance += distance;
     }
